@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/thermometer_description"
+        android:src="@drawable/temperature" />
+
+    <TextView
+        android:id="@+id/celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/celsius"
+        android:textSize="26sp"
+        android:layout_margin="16sp"
+        />
+
+    <EditText
+        android:id="@+id/celsius_degrees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/celsius_degrees"
+        android:inputType="number"
+        android:textSize="26sp"
+        android:layout_margin="16sp"
+        />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="20sp"
+        android:text="@string/convert_button"
+        android:textSize="16sp" />
+
+</LinearLayout>
